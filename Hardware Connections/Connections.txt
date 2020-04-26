@@ -1,0 +1,51 @@
+*SD card 
+
+ESP32		SD card
+Vin			VCC
+GND			GND
+DIO14			SCK
+DIO4			MISO
+DIO15			MOSI
+DIO13			CS
+
+-------------------------------------
+*ETHERNET
+
+ESP32		LAN8720
+DIO12		NC - Osc. Enable(solder using single stand wire) - 4k7 Pulldown(NC-GND)
+DIO22		TX1
+DIO19		TX0
+DIO21		TX_EN
+DIO26		RX1
+DIO25		RX0
+DIO27		CRS
+DIO0		nINT/RETCLK (50MHz) - 4k7 Pullup(nINT/RETCLK-3.3v)
+DIO23		MDC
+DIO18		MDIO
+GND			GND
+3V3			VCC
+
+-------------------------------------
+*UART2
+ESP32		UART
+DIO17		TX
+DIO16		RX
+
+-------------------------------------
+*Buttons
+
+ESP32		Buttons
+DIO34		switch 1 - 10k Pulldown
+DIO35		switch 2 - 10k Pulldown
+3.3v		common
+
+-------------------------------------
+*LED
+
+ESP32		LED
+DIO2		LED_1_PIN
+DIO32		LED_2_PIN
+DIO33		LED_3_PIN
+DIO5		LED_4_PIN
+GND			common
+

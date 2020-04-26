@@ -1,0 +1,11 @@
+For Static IP change IP adress in Ethernet.cpp
+IPAddress staticIp(192,168,22,5);
+IPAddress gateway(192,168,22,5);
+IPAddress subnet(255,255,255,0);
+IPAddress dns1(8,8,8,8);
+IPAddress dns2(8,8,4,4);
+
+
+For Dynamic IP
+Comment line 25
+ETH.config(staticIp, gateway,subnet,dns1,dns2);

@@ -1,0 +1,22 @@
+sudo apt-get install proftpd
+
+---------------------------------------
+sudo nano /etc/proftpd/proftpd.conf
+
+uncomment below line ("home/pi" is root folder for ftp)
+#DefaultRoot	~
+
+---------------------------------------
+sudo nano /etc/dhcpcd.conf
+
+chanange lines 
+# Example static IP configuration:
+interface eth0
+static ip_address=192.168.22.1/24
+#static ip6_address=fd51:42f8:caae:d92e::ff/64
+#static routers=192.168.0.1
+static domain_name_servers=192.168.22.1 8.8.8.8 8.8.4.4
+
+---------------------------------------
+sudo service dhcpcd restart
+sudo service proftpd restart

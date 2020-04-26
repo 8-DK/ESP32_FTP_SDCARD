@@ -1,0 +1,42 @@
+ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0018,len:4
+load:0x3fff001c,len:1100
+load:0x40078000,len:10088
+load:0x40080400,len:6380
+entry 0x400806a4
+Card Mount Success..
+.ETH Started
+....ETH MAC: B4:E6:2D:B3:EA:48, IPv4: 192.168.22.5, FULL_DUPLEX, Mbps
+ETH MAC: B4:E6:2D:B3:EA:48, IPv4: 192.168.22.5, FULL_DUPLEX, Mbps
+SD Card Size: 3806MB Free Size 3804MB (99.00 % free)
+< USER pi
+> 331 Password required for pi
+
+< PASS raspberry
+> 230 User pi logged in
+
+< NOOP
+> 200 NOOP command successful
+
+< TYPE I
+> 200 Type set to I
+
+< TYPE I
+> 200 Type set to I
+
+< EPSV
+> 229 Entering Extended Passive Mode (|||55460|)
+
+Port Parsed 55460
+< RETR /test.txt
+> 150 Opening BINARY mode data connection for /test.txt (3335040 bytes)
+
+Deleting file: /test.txt
+File deleted
+File Download Completed
+Time required Download File 7.98sec File Size 3335040kb  Speed of file transfer 408.23 kbps
